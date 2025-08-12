@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CasaAgora — Confirmação</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">CasaAgora</a>
+      <nav class="nav" aria-label="Main">
+        <a href="index.html">Início</a>
+        <a href="sobre.html">Nossa História</a>
+        <a href="confirmacao.html" class="active">Confirmação</a>
+        <a href="presentes.html">Presentes</a>
+        <a href="fotos.html">Fotos</a>
+        <a href="cerimonia.html">Cerimônia</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+    </div>
+  </header>
+
+  <main class="container main">
+    <h1>Confirme sua presença</h1>
+    <form id="rsvpForm" class="rsvp">
+      <label>Nome completo <input id="nome" required></label>
+      <label>Email <input id="email" type="email" required></label>
+      <label>Vai comparecer?
+        <select id="presenca" required>
+          <option value="">Selecione</option>
+          <option value="sim">Sim</option>
+          <option value="nao">Não</option>
+        </select>
+      </label>
+      <label>Acompanhantes <input id="acompanhantes" type="number" min="0" value="0"></label>
+      <label>Mensagem <textarea id="mensagem" rows="3"></textarea></label>
+      <button type="submit" class="btn primary">Enviar</button>
+    </form>
+
+    <section class="confirmados">
+      <h2>Confirmados</h2>
+      <ul id="listaConfirmados" class="list"></ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Renan & Parceira — CasaAgora</p>
+    </div>
+  </footer>
+</body>
+</html>
